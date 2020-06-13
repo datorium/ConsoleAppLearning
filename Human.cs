@@ -23,7 +23,7 @@ namespace ConsoleAppLearning
             Console.WriteLine("Hi, my full name is " + this.Name + " " + this.Surname + ". " + "I am " + this.Age + " years old.");
         }
 
-        public void AddNumbers(int a, int b)
+        public void AddNumbers(double a, double b)
         {
             Console.WriteLine(a + b);
         }
