@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Text;
 
 namespace ConsoleAppLearning
@@ -20,7 +21,8 @@ namespace ConsoleAppLearning
         }
         public void Introduce()
         {
-            Console.WriteLine("Hi, my full name is " + this.Name + " " + this.Surname + ". " + "I am " + this.Age + " years old.");
+            //Console.WriteLine("Hi, my full name is " + this.Name + " " + this.Surname + ". " + "I am " + this.Age + " years old.");
+            Console.WriteLine($"Hi, my full name is {this.Name} {this.Surname}. I am {this.Age} years old.");
         }
 
         public void AddNumbers(double a, double b)
@@ -39,6 +41,19 @@ namespace ConsoleAppLearning
             {
                 return;
             }
+            else if(age < this.Age)
+            {
+                Console.WriteLine("The new age for " + this.Name + " is younger, are you shure to change y/n?");
+                string answer = Console.ReadLine();
+                if(answer == "y")
+                {
+                    this.Age = age;
+                }
+                else
+                {
+                    return;
+                }
+            }            
             else
             {
                 this.Age = age;
