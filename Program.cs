@@ -15,20 +15,15 @@ namespace ConsoleAppLearning
 
             persons[1].SetAge(15);
 
-            //persons[0].Introduce();
-            //persons[1].Introduce();
-            //persons[2].Introduce();
-            //persons[3].Introduce();
-
-            //for (int i = 0; i < persons.Count; i++)
-            //{
-            //    persons[i].Introduce();
-            //}
-
             foreach(var person in persons)
             {
                 person.Introduce();
             }
+
+            //create some accounts here
+            List<BankAccount> accounts = new List<BankAccount>();
+            accounts.Add(new BankAccount());
+
         }
     }
 }
