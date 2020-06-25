@@ -32,6 +32,10 @@ namespace ConsoleAppLearning
             {
                 account.PrintInfo();
             }
+
+            //make some transactions on Jenifer's account
+            accounts[0].MakeDeposit(100, "Birthday gift");
+            accounts[0].MakeDeposit(400, "First salary");
         }
     }
 }
