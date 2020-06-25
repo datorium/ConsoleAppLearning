@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 
 namespace ConsoleAppLearning
 {
@@ -7,6 +8,7 @@ namespace ConsoleAppLearning
     {
         static void Main(string[] args)
         {
+            
             List<Human> persons = new List<Human>();
             persons.Add(new Human("Jenifer", "Lopez", 25, "Brown"));
             persons.Add(new Human("Anna", "Liepa", 16, "Blue"));
@@ -29,7 +31,7 @@ namespace ConsoleAppLearning
             foreach (var account in accounts)
             {
                 account.PrintInfo();
-            }            
+            }
         }
     }
 }
