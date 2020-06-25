@@ -40,6 +40,8 @@ namespace ConsoleAppLearning
             Console.WriteLine(accounts[0].Balance);
             accounts[0].MakeWithdrawal(1500, "Online course");
             Console.WriteLine(accounts[0].Balance);
+
+            string input = Console.ReadLine();
         }
     }
 }
